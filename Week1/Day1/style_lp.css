@@ -1,0 +1,83 @@
+header{
+    min-height: 70vh;
+    width:auto;
+    background-image: url(images/seaview.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.topbar{
+    background-color: white;
+    width: 100%;
+    height: 30px;
+}
+
+.topemail{
+    align-content: center;
+    top: 10px;
+    left: 10px;
+    bottom: 50px;
+    right: 10px;
+}
+
+
+article {
+    font-family: arial;
+    font-size: 24px;
+    margin: 25px;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    
+  }
+
+.aside {
+  inline-block
+  font-family: arial;
+  text-align: center;
+  font-size: 24px;
+  margin: 25px;
+  width: 350px;
+  height: 200px;
+  outline: dashed 1px black;
+  /* Setup */
+  position: relative;
+}
+
+.text-nav{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top:5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+
+.text{
+    width: 90%;
+    color:white;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.email{
+  margin: 25px;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  
+}
+
+  
+  
+@media screen {
+and (min-width: 1200px)
+and (max-width: 1600px) 
+  }

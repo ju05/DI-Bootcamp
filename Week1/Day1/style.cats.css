@@ -1,0 +1,23 @@
+.red_box {
+    text-align: center;
+    color: red;
+    border: solid red;
+    padding: 5px;
+    margin: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    align-content: center;
+
+}
+.pictures {
+    width: 100%;
+    text-align: center;
+    border: 5px solid orangered;
+}
+.mr-top {
+    margin-top: 50px;
+    text-align: center;
+    border: 5px solid orangered;
+}
