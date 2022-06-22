@@ -1,0 +1,41 @@
+.outer-div {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    /* flex-wrap: wrap; */
+    align-content: space-between;
+    
+    
+}
+
+.inner-div1 {
+    text-align: center;
+    background-color: pink;
+    width: 100%;
+    padding: 7%;
+    
+
+}
+
+.inner-div2 {
+    text-align: center;
+    background-color:blueviolet;
+    width: 10%;
+    padding: 7%;
+    size: 20%;
+    align-self: flex-end;
+    
+
+}
+
+.inner-div3 {
+    text-align: center;
+    background-color: violet;
+    width: 100%;
+    padding: 7%;
+    
+
+}
