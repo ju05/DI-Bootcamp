@@ -1,14 +1,15 @@
+.inner {
+    background-color: bisque;
+}
+
 .outside-container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-    column-gap: 0px;
+    
     
 }
 
-/* i can do also a inner div and the giv it a color */
-
-/* to change the colors */
 /* .all>div:nth-child (3n+1) */
 /* n th n=0, then n-1, and so on */
 

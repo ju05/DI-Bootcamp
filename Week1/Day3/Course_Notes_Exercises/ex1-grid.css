@@ -1,0 +1,56 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+    "a b b"
+    "c d d"
+    "e f f"
+    "g g g";
+   
+}
+
+.div-type1a {
+    border: solid black;
+    height: 100px;
+    
+}
+
+.div-type1b {
+    border: solid black;
+    height: 100px;
+    
+}
+
+.div-type1c {
+    border: solid black;
+    height: 100px;
+    
+}
+
+.div-type2a {
+    border: solid purple;
+    height: 100px;
+    
+}
+
+.div-type2b {
+    border: solid purple;
+    height: 100px;
+    
+}
+
+.div-type2c {
+    border: solid purple;
+    height: 100px;
+    
+}
+
+
+.div-type3 {
+    border: solid yellow;
+    height: 100px;
+    
+}

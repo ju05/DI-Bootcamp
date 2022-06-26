@@ -1,0 +1,81 @@
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    width: fit-content;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: stretch;
+    grid-template-areas:
+    "a a a a"
+    "b c c c"
+    "d c c c"
+    "d f f f"
+    "g g g h"
+    "i i i i";
+}
+
+
+.header {
+    border: solid aqua;
+    background-color: aqua;
+    height: 50px;
+    grid-row: 1;
+    grid-column: span 4;
+}
+
+.hero {
+    border: solid violet;
+    background-color: violet;
+    height: 80px;
+    grid-row: 2;
+    grid-column: 1 / span 1;
+    
+}
+
+.main-content {
+    border: solid goldenrod;
+    background-color: goldenrod;
+    height: 150px;
+    grid-row: 2;
+    grid-column: 2 / span 3;
+}
+
+.sidebar {
+    border: solid rgba(152, 241, 152, 0.983);
+    background-color: rgba(152, 241, 152, 0.983);    
+    grid-row: 2;
+    grid-column: 1 / span 1;
+}
+
+.extra-content {
+    border: solid grey;
+    background-color: grey;
+    height: 100px;
+    grid-row: 3;
+    grid-column: 2 / span 3;
+    
+}
+
+.related-images {
+    border: solid forestgreen;
+    background-color: forestgreen;
+    height: 80px;
+    grid-row: 5;
+    grid-column: 1 / span 3;
+}
+
+.related-posts {
+    border: solid pink;
+    background-color: pink;
+    height: 80px;
+    grid-row: 5;
+    grid-column: 4 / span 1;
+}
+
+.footer {
+    border: solid orange;
+    background-color: orange;
+    height: 50px;
+    grid-row: 6;
+    grid-column: 1 / span 4;
+}
