@@ -1,12 +1,12 @@
 // // Strings method
-var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var a = txt.length;
+// var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// var a = txt.length;
 //
 // //
-var str = "Please locate where 'locate' occurs!";
-var pos = str.indexOf("locate");
-// //
-console.log(pos);
+// var str = "Please locate where 'locate' occurs!";
+// var pos = str.indexOf("locate");
+// // //
+// console.log(pos);
 // //
 // // var str = "Please locate where 'locate' occurs!";
 // // var pos = str.lastIndexOf("locate");
