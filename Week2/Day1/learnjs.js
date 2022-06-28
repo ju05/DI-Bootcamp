@@ -40,6 +40,8 @@
 // && //and
 // || //or
 // ! //not
+// if (!(1==1)) = false
+// if (!(!1==1)) = true
 
 // JAVASCRIPT FUNCTIONS
 // -----------------

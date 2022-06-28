@@ -27,10 +27,10 @@
 // part 1 = "This dinner is "
 // part 2 = "! You cook well"
 
-let sentence = ("This dinner is not that bad ! You cook well");
+let sentence = ("This dinner is bad!");
 let wordNot = sentence.indexOf("not");
 let wordBad = sentence.indexOf("bad");
-let outSentence = sentence.substring(wordNot,wordBad+3);
+// let outSentence = sentence.substring(wordNot,wordBad+3);
 let part1 = sentence.slice(0,wordNot);
 let part2 = sentence.slice(wordBad+3, sentence.length);
 let newSentence = (part1 + "good" + part2);

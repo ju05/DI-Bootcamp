@@ -82,3 +82,21 @@
 //
 // var fruits = ["Banana", "Orange", "Apple", "Mango"];
 // fruits.toString();
+
+
+
+// arr.map
+// arr.filter
+// arr.sort
+// arr.find
+// arr.findIndex
+// arr.reduce
+
+// Object methods
+
+// arr.forEach((item, i) => {
+// console.log(i)}
+
+// Object.keys(obj)
+// Object.values(obj)
+// Object.entries(obj)

@@ -42,7 +42,7 @@ Number("10,330");       // returns NaN
 Number("10 33");       // returns NaN
 Number("John");        // returns NaN
 
-parseInt("10");         // returns 10
+// parseInt("10");         // returns 10 CONVERTS A STRING INTO A NUMBER
 parseInt("10.33");      // returns 10
 parseInt("10 20 30");   // returns 10
 parseInt("10 years");   // returns 10
