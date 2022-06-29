@@ -9,9 +9,17 @@
 // * * * * *
 // * * * * * *
 
-let i=0; 
-while (i<6){
-    console.log (i * ("*"));
-    i++
+let str = "* "
+for (let i=1; i<7; i++){
+    console.log(str(i));
+ 
+
+let sum = ""
+for(let i=1; i<7; i++){
+    for (let j = 0; j < i; j++){
+         sum += str;
+
     }
-   
+}
+}
+    console.log(sum)
