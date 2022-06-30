@@ -1,10 +1,10 @@
-// 🌟 Exercise 1 : Information
-// Instructions
-// Part I : function with no parameters
-// 
-// Create a function called infoAboutMe() that takes no parameter.
-// The function should console.log a sentence about you (ie. your name, age, hobbies ect…).
-// Call the function.
+// // 🌟 Exercise 1 : Information
+// // Instructions
+// // Part I : function with no parameters
+// // 
+// // Create a function called infoAboutMe() that takes no parameter.
+// // The function should console.log a sentence about you (ie. your name, age, hobbies ect…).
+// // Call the function.
 
 // function infoAboutMe(){
 //        console.log("My name is Juliana, 32 years old and I love watercolor paiting");
@@ -13,13 +13,13 @@
    
 
 
-// // Part II : function with three parameters
+// // // Part II : function with three parameters
 
-// // Create a function called infoAboutPerson(personName, personAge, personFavoriteColor) that takes 3 parameters.
-// // The function should console.log a sentence about the person (ie. “You name is …, you are .. years old, your favorite color is …”)
-// // Call the function twice with the following arguments:
-// // infoAboutPerson("David", 45, "blue")
-// // infoAboutPerson("Josh", 12, "yellow")
+// // // Create a function called infoAboutPerson(personName, personAge, personFavoriteColor) that takes 3 parameters.
+// // // The function should console.log a sentence about the person (ie. “You name is …, you are .. years old, your favorite color is …”)
+// // // Call the function twice with the following arguments:
+// // // infoAboutPerson("David", 45, "blue")
+// // // infoAboutPerson("Josh", 12, "yellow")
 
 // function infoAboutPerson(name, age, favColor){
 //              return ("Your name is " + name + ", you're " +age+ "years old and your favorite color is " + favColor)
@@ -30,22 +30,22 @@
 
 
 
-// // 🌟 Exercise 2 : Tips
-// // Instructions
-// // John created a simple tip calculator to help calculate how much to tip when he and his family go to restaurants.
+// // // 🌟 Exercise 2 : Tips
+// // // Instructions
+// // // John created a simple tip calculator to help calculate how much to tip when he and his family go to restaurants.
 
-// // Create a function named calculateTip() that takes no parameter.
+// // // Create a function named calculateTip() that takes no parameter.
 
-// // Inside the function, ask John for the amount of the bill.
+// // // Inside the function, ask John for the amount of the bill.
 
-// // Here are the rules
-// // If the bill is less than $50, tip 20%.
-// // If the bill is between $50 and $200, tip 15%.
-// // If the bill is more than $200, tip 10%.
+// // // Here are the rules
+// // // If the bill is less than $50, tip 20%.
+// // // If the bill is between $50 and $200, tip 15%.
+// // // If the bill is more than $200, tip 10%.
 
-// // Console.log the tip amount and the final bill (bill + tip).
+// // // Console.log the tip amount and the final bill (bill + tip).
 
-// // Call the calculateTip() function.
+// // // Call the calculateTip() function.
 
 // let bill = Number(prompt("enter the total of the bill:"));
 // let tip = 0
@@ -71,28 +71,28 @@
 // console.log(calculateTip())
 
 
-// // 🌟 Exercise 3 : Find The Numbers Divisible By 23
-// // Instructions
-// // Create a function call isDivisible() that takes no parameter.
+// // // 🌟 Exercise 3 : Find The Numbers Divisible By 23
+// // // Instructions
+// // // Create a function call isDivisible() that takes no parameter.
 
-// // In the function, loop through numbers 0 to 500.
+// // // In the function, loop through numbers 0 to 500.
 
-// // Console.log all the numbers divisible by 23.
+// // // Console.log all the numbers divisible by 23.
 
-// // At the end, console.log the sum of all numbers that are divisible by 23.
+// // // At the end, console.log the sum of all numbers that are divisible by 23.
 
-// // Outcome : 0 23 46 69 92 115 138 161 184 207 230 253 276 299 322 345 368
-// // 391 414 437 460 483
-// // Sum : 5313
+// // // Outcome : 0 23 46 69 92 115 138 161 184 207 230 253 276 299 322 345 368
+// // // 391 414 437 460 483
+// // // Sum : 5313
 
 
-// // Bonus: Add a parameter divisor to the function.
+// // // Bonus: Add a parameter divisor to the function.
 
-// // isDivisible(divisor)
+// // // isDivisible(divisor)
 
-// // Example:
-// // isDivisible(3) : Console.log all the numbers divisible by 3, and their sum
-// // isDivisible(45) : Console.log all the numbers divisible by 45, and their sum
+// // // Example:
+// // // isDivisible(3) : Console.log all the numbers divisible by 3, and their sum
+// // // isDivisible(45) : Console.log all the numbers divisible by 45, and their sum
 
 // function isDivisible(){
 //     let sum = 0
@@ -105,12 +105,13 @@
                
 //     }    
 //     return sum
-// }
-// // console.log(isDivisible())
+
+// console.log(isDivisible())
 
 
 // // 🌟 Exercise 4 : Shopping List
 // // Instructions
+
 let stock = { 
     "banana": 6, 
     "apple": 0,
@@ -127,12 +128,17 @@ let prices = {
     "blueberry":10
 } 
 
+function updateStock (item){
+    stock[item]--;
+}
+
 let shoppingList = ["banana", "orange", "apple"]
 let sum = 0
 
 function myBill() {
     for (let i = 0; i < shoppingList.length; i++) {
         if (Object.keys(stock).includes(shoppingList[i])){
+            updateStock(item)
             
            sum += prices[shoppingList[i]]
         }
@@ -144,6 +150,8 @@ function myBill() {
 }
 
 console.log(myBill())
+
+
 // Add the stock and prices objects to your js file.
 
 // Create an array called shoppingList with the following items: “banana”, “orange”, and “apple”. 
@@ -262,49 +270,49 @@ function changeEnough(itemPrice, amountOfChange){
 
 
 
-function hotelCost(){
-    let nights = Number(prompt("How many nights would you like to take?"))
-        // if (nights != Number){
-        //     Number(prompt("How many nights would you like to take? Answer with numbers"));
-        // }
-    return nights * 140
+// function hotelCost(){
+//     let nights = Number(prompt("How many nights would you like to take?"))
+//         // if (nights != Number){
+//         //     Number(prompt("How many nights would you like to take? Answer with numbers"));
+//         // }
+//     return nights * 140
         
-    }
-// console.log(hotelCost())
+//     }
+// // console.log(hotelCost())
 
-function planeRideCost(){
-    let destination = prompt("To where are you traveling?")
-         if (destination.toLowerCase() == "london"){
-        return 183
-       }
+// function planeRideCost(){
+//     let destination = prompt("To where are you traveling?")
+//          if (destination.toLowerCase() == "london"){
+//         return 183
+//        }
 
-       else if (destination.toLowerCase() == "paris"){
-        return 220
-       }
-       else{
-        return 300
-       }
-}
-// console.log(planeRideCost())
+//        else if (destination.toLowerCase() == "paris"){
+//         return 220
+//        }
+//        else{
+//         return 300
+//        }
+// }
+// // console.log(planeRideCost())
 
-function rentalCarCost(){
-    let daystoRent = Number(prompt("How many days you`ll rent the car?"))
-    let discount = daystoRent * 40 * 0.15
-         if (daystoRent >= 10){
-            return daystoRent * 40 - discount
-         }
-         else return daystoRent * 40
+// function rentalCarCost(){
+//     let daystoRent = Number(prompt("How many days you`ll rent the car?"))
+//     let discount = daystoRent * 40 * 0.15
+//          if (daystoRent >= 10){
+//             return daystoRent * 40 - discount
+//          }
+//          else return daystoRent * 40
 
-}
-// console.log(rentalCarCost())
+// }
+// // console.log(rentalCarCost())
 
-function totalVacationCost(){
+// function totalVacationCost(){
 
-    let a = hotelCost()
-    let b = planeRideCost()
-    let c = rentalCarCost()
+//     let a = hotelCost()
+//     let b = planeRideCost()
+//     let c = rentalCarCost()
 
-    return a + b + c
+//     return a + b + c
 
-}
-console.log(totalVacationCost())
+// }
+// console.log(totalVacationCost())
