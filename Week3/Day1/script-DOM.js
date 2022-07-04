@@ -42,5 +42,11 @@ let divs = document.querySelector('inner1');
 //    document.appendChild(element)	Add an HTML element
 //    document.replaceChild(new, old)	Replace an HTML element
 
+creating Element
+let li = document.createElement("li");
+li.textContent = 7;
+li.className.add("my-class");
+li.setAttribute("id", "myli");
+li.style.color = red;
 
 
