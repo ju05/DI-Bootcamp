@@ -41,12 +41,52 @@ let divs = document.querySelector('inner1');
 //    document.removeChild(element)	Remove an HTML element
 //    document.appendChild(element)	Add an HTML element
 //    document.replaceChild(new, old)	Replace an HTML element
-
+let uls = document.getElementsByTagName("ul")
 creating Element
+// you create Element in the document, so let _li = document.createElement("which element? - il")
+// you put the inner text in the variable that was created for ex.: _il.innerText = "bla bla"
+// you append the element that was created using the parent tag, for ex.: _ul.appendChild("il")
 let li = document.createElement("li");
 li.textContent = 7;
 li.className.add("my-class");
 li.setAttribute("id", "myli");
 li.style.color = red;
+uls[0].appendChild(li)
+
+// DOM Selectors
+// --------------
+// getElementById
+// getElementsByTagName
+// getElementsByClassName
+
+// querySelector
+// querySelectorAll
+
+// getAttribute
+// setAttribute
+
+// ##Changing Styles
+// style.{property} //ok
+
+// className //best
+// classList //best
+
+// classList.add
+// classList.remove
+// classList.toggle
+
+// ##Bonus
+// innerHTML //DANGEROUS
+
+// parentElement
+// children
+// childNodes
+
+// document.createElement;
+// appendChild;
+// removeChild;
+// replaceChild;
+
+// ##It is important to CACHE selectors in variables
 
 
