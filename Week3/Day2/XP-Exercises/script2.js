@@ -27,7 +27,7 @@ function sendData(){
     else {
         
         _userAnswers.push(_fname.value)
-         _userAnswers.push(_lname.value)
+        _userAnswers.push(_lname.value)
 
     }
     

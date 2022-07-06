@@ -9,7 +9,7 @@ _form.addEventListener("submit", function (event){
         sendData()
     }
     else{ 
-        alert("Please enter a text just with letters.")
+        alert("Please enter a text with letters only.")
     }    
 })
 
