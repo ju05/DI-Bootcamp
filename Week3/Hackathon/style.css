@@ -1,0 +1,112 @@
+/* index style */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background-color: black
+}
+#popUp-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #ff151584;
+}
+#popUp{
+    max-width: 600px;
+    height: 300px;
+    margin: auto;
+    background-image: url(images/eleven-winner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#walkman{
+    z-index: 9;
+}
+
+#walkmanpic{
+    position:relative;
+    align-items: flex-start;
+    margin: 0;
+    border: 0;
+    width: 10%; 
+}
+
+#musicPlayer {
+    background-color: #000;
+}
+#title {
+    left: 50%;
+    background-color: black;
+    width: 100%;
+    padding: 5%;
+}
+#board {
+    text-align: center;
+    background-color:black;
+    width: 50%;
+    padding: 15%;
+    size: 20%;
+    align-self: center;
+}
+#main {
+    display: grid;
+    background-image: url(images/lost\ vecna.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(10,1fr);
+    height: 100vh;
+    padding: 5px 5px 5px 0;
+    border: 1px solid #ccc;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+  
+#main > * {
+    border: 1px solid lightgrey;
+    background-color: black;
+}
+
+button {
+    grid-column: 1/4;
+    background-color: #ff1515;
+    border:none;
+    border-radius: 8px;
+    color: #000;
+    padding: 15px;
+    width: 20%;
+    text-align: center;
+    font-size: 22px;
+    margin: 5px;
+  }
+footer {
+    text-align: center;
+    color: black;
+    background-color: #ff1515;
+    width: 100%;
+    padding: 5%;
+}
+
