@@ -62,7 +62,7 @@ let colors = ["blue", "turquoise", "purple", "pink"]
 
 for (x in colors) {
     x = 0
-    console.log(x "is my" x+1 +"nd choice");
+    // console.log(x "is my" x+1 +"nd choice")
 }
 
 
@@ -82,6 +82,7 @@ while (typeof num == "number" && num < 10){
    
     number = prompt("Enter another number")
     num = Number(number)
+   
 
 
 }
@@ -104,7 +105,7 @@ let building = { numberOfFloors : 4,
 // // building = {obj key:value, key:{obj as value with 4x key:value}, key: [arr with 3 indexes as value], key {with a obj as value with 3xkey:[3x arrays as values]}}
 
 
-console.log(Object.values(building)[0]);
+console.log(building.numberOfFloors);
 
 
 // // Console.log how many apartments are on the floors 1 and 3.
