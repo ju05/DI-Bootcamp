@@ -104,15 +104,15 @@ play.addEventListener("click", function() {
                 count == 0
                 clearInterval(speed2);
                 clearInterval(timer); 
-                loose()       }  
+                win()       }  
             else if (count == 0 && score.lenght < 60){
                 clearInterval(speed2);score.length >= 70 && count > 0
                 clearInterval(timer); 
-                loose()}
+                win()}
             else if (count == 0 && score.lenght > 60){
                 clearInterval(speed2);
                 clearInterval(timer); 
-                loose()}                   
+                win()}                   
     }, 3000)   
     
     let difficult2 = setTimeout(function(){
@@ -128,15 +128,15 @@ play.addEventListener("click", function() {
                 count == 0
                 clearInterval(speed2);
                 clearInterval(timer); 
-                loose()       }  
+                win()       }  
             else if (score.lenght < 70 && count === 0){
                 clearInterval(speed2);
                 clearInterval(timer); 
-                loose()}
+                win()}
             else if (score.length > 70){
                 clearInterval(speed2);
                 clearInterval(timer); 
-                loose()} 
+                win()} 
     }, 1000)
    },10000)
     let superSpeed = setInterval(function(){
@@ -152,15 +152,15 @@ play.addEventListener("click", function() {
             count == 0
             clearInterval(speed2);
             clearInterval(timer); 
-            loose()       }  
+            win()       }  
         else if (count === 0 && score.lenght <= 120){
             clearInterval(speed2);
             clearInterval(timer); 
-            loose()}
+            win()}
         else if (count === 0 && score.length >= 150){
             clearInterval(speed2);
             clearInterval(timer); 
-            loose()}  
+            win()}  
     }, 500)
   
 })

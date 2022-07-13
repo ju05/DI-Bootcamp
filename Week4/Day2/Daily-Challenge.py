@@ -14,8 +14,10 @@ print(multiples)
 
 # Challenge 2
 # Write a program that asks a string to the user, and display a new string with any duplicate consecutive letters removed.
-user_str = input("Enter a string")
+user_str = "ppoeemm"
+word_l = list(user_str)
 new_str = ""
+first_latter = word_l[0]
 compare_letter = ""
 for i,char in enumerate(user_str)
     if len(new_str) == 0:

@@ -118,3 +118,15 @@ while True:
         break
 # As they enter each topping, print a message saying you’ll add that topping to their pizza.
 # Upon exiting the loop print all the toppings on the pizza pie and what the total price is (10 + 2.5 for each topping).
+
+# A movie theater charges different ticket prices depending on a person’s age.
+# if a person is under the age of 3, the ticket is free.
+# if they are between 3 and 12, the ticket is $10.
+# if they are over the age of 12, the ticket is $15.
+# Ask a family the age of each person who wants a ticket.
+# Store the total cost of all the family’s tickets and print it out.
+
+# A group of teenagers are coming to your movie theater and want to watch a movie that is restricted for people between the ages of 16 and 21.
+# Given a list of names, write a program that asks teenager for their age, if they are not permitted to watch the movie, remove them from the list.
+# At the end, print the final list.
+ages = int(input(f"What is {name}'s age?"))
