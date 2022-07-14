@@ -9,14 +9,16 @@ matrix_list = [
     ['i', 'r', '!']
 ]
 message = []
-for column in matrix_list:
+# i could use zip here
+# (*column) = unpack the element
+for column in matrix_list: 
     column_0 = [column[0] for column in matrix_list]
     column_1 = [column[1] for column in matrix_list]
     column_2 = [column[2] for column in matrix_list]
-    
+print(column_0)  
 def check_if_letter(list):
     for index in list:
-        is_letter = str(index).isalpha()
+        is_letter = str(index.isalpha())
         if is_letter == True:
             message.append(index)
         else: pass
@@ -25,7 +27,7 @@ def convert(list):
     for letter in list:
         cracked_message += letter
     return cracked_message
-    
+
 check_if_letter(column_0)
 check_if_letter(column_1)
 check_if_letter(column_2)
