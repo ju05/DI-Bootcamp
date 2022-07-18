@@ -1,0 +1,37 @@
+super() method connect me to the parent atributs
+syntaxe:
+super().__init__(name,traits)
+
+__dict__ = will give all the atributes of a class
+
+pprint() = separate the print in a nice way for reading __init__
+
+Encapsulation
+private and protected attributes
+def __init__(self, holder):
+self._balance = 0.0 # _ protected
+self.__holder = holder # __ private
+
+#How to access private attributes 
+@property
+def balance(self)
+    return self.__balance
+@balance.setter
+    def __balance(self,amount):
+    self.__balance += amount
+
+def deposit(self, amount):
+    self.__balance += amount
+
+def withdraw(self, amount):
+if amount > self.balance:
+    raise ValueError('insufficient founds')
+    self.balance += - amount
+
+Polymorphism = 
+
+
+creating our modules:
+from parent import CharacterTraits
+from parent import RPG_CHARACTER
+CRTL + t you get to the file documentation (the file from where are you importing stuff)
