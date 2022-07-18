@@ -14,11 +14,11 @@ print(multiples)
 
 # Challenge 2
 # Write a program that asks a string to the user, and display a new string with any duplicate consecutive letters removed.
-user_str = input("Enter a string")
-new_str = ""
-compare_letter = ""
-for i,char in enumerate(user_str)
-    if len(new_str) == 0:
-        new_str = char
-        compare_letter = char
-    elif char == compare_letter
+# user_str = input("Enter a string")
+# new_str = ""
+# compare_letter = ""
+# for i,char in enumerate(user_str)
+#     if len(new_str) == 0:
+#         new_str = char
+#         compare_letter = char
+#     elif char == compare_letter
