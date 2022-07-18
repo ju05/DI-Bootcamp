@@ -3,7 +3,6 @@
 board = ['-','-','-',
          '-','-','-',
          '-','-','-',]
-
 game_goes_on = True
 winner = None
 current_player = 'X'
@@ -18,15 +17,18 @@ def play_game():
         display_board()
         player_input(current_player)
         check_winner()
-        if_game_is_over()
+        # if_game_is_over()
         flip_turn()
+        print('winner', winner)
     if winner == 'X' or winner == 'O':
         print(f'{winner} won!')
+
     elif winner == None:
         print("Tie")
 
 def player_input(current_player):
     move = input('choose a position from 1 to 9:')
+    # here you also need to check if the position the player checked is already taken so let the user know this and ask again for a position.
     position = int(move) - 1
     board[position] = current_player
     # display_board()
@@ -36,6 +38,7 @@ def check_tie():
         game_goes_on = False
     # hey, gaston: I am having trouble to figure out how to call the winner if there is a match on the row, columsn or diagonals.
     # i dont get errors, but the game continues even when someone won.
+    # your only mistake was you were comparing winner == 'x' and not asigning winner = 'x'
 def check_winner():
     # set global variable
     global winner
@@ -49,26 +52,27 @@ def check_winner():
     elif diagonals_winner:
         winner = diagonals_winner
     
-def if_game_is_over():
-    check_winner()
-    check_tie()
+# def if_game_is_over():
+#     check_winner()
+#     check_tie()
        
-def if_game_is_over():
-    check_winner()
-    check_tie()
+# def if_game_is_over():
+#     check_winner()
+#     check_tie()
 
     
 def check_rows():
 #   set global variables
     global game_goes_on
     # check if there is a row with all the same values and that its not emprty ('-')
-    row1 = board[0] == board[1] == board[2] != "-"       
+    row1 = board[0] == board[1] == board[2] != "-"
+    print('check row', row1)  
     row2 = board[3] == board[4] == board[5] != "-"      
     row3 = board[6] == board[7] == board[8] != "-"
     # if any row have a match we have a winner
     if row1 or row2 or row3:
         # stop game:
-        game_goes_on == False
+        game_goes_on = False
         # return the winner:
     if row1:
         return board[0]
@@ -85,7 +89,7 @@ def check_columns():
     col2 = board[1] == board[4] == board[7] != "-"      
     col3 = board[2] == board[5] == board[8] != "-"
     if col1 or col2 or col3:
-        game_goes_on == False
+        game_goes_on = False
     if col1:
         return board[0]
     elif col2:
@@ -99,7 +103,7 @@ def check_diagonals():
     dig1 =  board[0] == board[4] == board[8] != "-"
     dig2 = board[2] == board[4] == board[6] != "-"
     if dig1 or dig2:
-        game_goes_on == False
+        game_goes_on = False
     if dig1:
         return board[0]
     elif dig2:
