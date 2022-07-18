@@ -1,0 +1,25 @@
+In object-oriented programming, concepts are modeled as classes and objects. 
+An idea is defined using a class, and an INSTANCE of this class is called an object. 
+Almost everything in Python is an object, including strings, lists, dictionaries, and numbers. 
+When we create a list in Python, we’re creating an object which is an instance of the list class, which represents the concept of a list. 
+Classes also have attributes and methods associated with them. 
+Attributes are the characteristics of the class, while methods are functions that are part of the class.
+
+How can i check witch class is some data type in python?
+>>> type(3)
+<class 'int'>
+>>>type("")
+<class 'str'>
+
+Use dir(type of data) and help(type of data) functions to see all the documentation about the type of data you want.
+ex.: dir("") will return the documentation about strings
+type "q" to quit and exit the documentation
+
+Attributes are the characteristics associated to a type.
+Ex.: a file has attributes such as: name, size, date, permissions, etc
+
+Methods are the functions associated to a type.
+Ex.:for a file: create, edditing, deleting, adding, etc
+
+The syntax used to access the attributes is called DOT NOTATION because of the dot used in the expression. 
+Dot notation lets you access any of the abilities that the object might have, called methods or information that it might store called attributes. 
