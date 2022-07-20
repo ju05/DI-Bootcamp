@@ -1,0 +1,3 @@
+__repr__ is different than pprint because it shows all the attributes of the object,
+wich we can use val() in order to create a new object as the one that we got with __repr__.
+Is a method for the programer, pprint is for the user

@@ -1,7 +1,7 @@
-from translation import Translator
+from googletrans import Translator
 
 def translate():
-    Translator= translation(to_lang="en")
+    Translator= googletrans(to_lang="en")
     output = {}
     french_words= ["Bonjour", "Au revoir", "Bienvenue", "A bientôt"] 
     for phrase in french_words:
