@@ -10,7 +10,8 @@ class Text():
     @classmethod
     def check_text(cls,text_file):
         with open (text_file, mode='r') as file:
-            return Text('the_stranger.txt')
+            text_file = file.read()
+            return Text(text_file)
 
     def frequency_of_word(self, word) -> int:
         '''returns the frequency of a given word in the self.text_str'''               
@@ -30,7 +31,7 @@ class Text():
 
     def unique_words(self)->list: 
         '''returns a list of words that appears just once in the self.text_str'''
-        if len(self.text_str) != 0:
+        if len(self.text_str) != 0: #strip()
             # split = Counter(self.text_str.split(' '))
             unique_words = set(self.text_str.split(' '))
             # unique = [w for w in unique_words if Counter[w] == 1]
@@ -43,5 +44,7 @@ print(text2.most_common_word())
 print(text2.unique_words())
 
 #Part II
-print(Text.most_commom_word())
+uploaded_text = Text.check_text('./the_stranger.txt')
+print(Text.check_text('./the_stranger.txt').most_common_word())
+print(Text.check_text('./the_stranger.txt').frequency_of_word('good'))
                 

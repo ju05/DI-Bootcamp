@@ -6,6 +6,7 @@ words_collection = []
 def get_words_from_file()->list:    
     '''read the file`s content and return the words as a collection'''
     with open('words.txt', mode='r') as f:
+        f.readlines()
         for word in f:
             words_collection.append(word)
     return words_collection 
@@ -14,8 +15,9 @@ def get_random_sentence(lenght:int)->str:
     '''creates a random phrase wich its lenght is the given parameter(lenght)'''
     random_words = []
     with open('words.txt', mode='r') as f:
-        for count,word in enumerate(words_collection):
-            random_words.append(count, word)
+        f.read()
+        for word in words_collection:
+            random_words.append(word)
     return random_words  
 
 def main():
@@ -31,32 +33,29 @@ def main():
     else:
         user_input = input("That's not right, please enter today`s date correctly: ")
 
-# print(get_words_from_file())
+print(get_words_from_file())
 print(get_random_sentence(5))
 
 
-# ex 2 
-import json
-sampleJson = """{ 
-   "company":{ 
-      "employee":{ 
-         "name":"emma",
-         "payable":{ 
-            "salary":7000,
-            "bonus":800
-         }
-      }
-   }
-}"""
-sampleJason = eval(sampleJson)
-#1
-print(sampleJason['company']['employee']['payable'])
-#2
-sampleJason['company']['employee']['birth_date'] = '24/07.2000'
-print(sampleJason)
-#3
-with open("XP1.json", "w") as out_file:
-    json.dump(sampleJason, out_file)
-
-
-# with open (file, )
+# # ex 2 
+# import json
+# sampleJson = """{ 
+#    "company":{ 
+#       "employee":{ 
+#          "name":"emma",
+#          "payable":{ 
+#             "salary":7000,
+#             "bonus":800
+#          }
+#       }
+#    }
+# }"""
+# sampleJason = eval(sampleJson)
+# #1
+# print(sampleJason['company']['employee']['payable'])
+# #2
+# sampleJason['company']['employee']['birth_date'] = '24/07.2000'
+# print(sampleJason)
+# #3
+# with open("XP1.json", "w") as out_file:
+#     json.dump(sampleJason, out_file)
